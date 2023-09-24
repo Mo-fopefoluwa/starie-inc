@@ -3,10 +3,12 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerChildren } from "../utils/motion";
 import useHeaderShadow from "../hooks/useHeaderShadow";
 import { useOnOutsideClick } from "../hooks/useOnClickOutside";
+import useHeaderColor from "../hooks/useHeaderColor";
 
 const Header = () => {
   const [open, setOpen] = useState("");
   const headerShadow = useHeaderShadow();
+  const headerColor = useHeaderColor();
   const { innerBorderRef } = useOnOutsideClick(() => setOpen(false));
 
   const scrollToHome = () => {
@@ -66,7 +68,7 @@ const Header = () => {
         variants={staggerChildren}
         viewport={{ once: false, amount: 0.25 }}
         className="fixed z-50 w-full"
-        style={{ boxShadow: headerShadow }}
+        style={{ boxShadow: headerShadow, backgroundColor: headerColor }}
       >
         <div className="bg-[#fff0] flex justify-between items-center md:px-24 md:py-12  px-12 py-8 w-full">
           <motion.div variants={fadeIn("left", "tween", 0.2, 1)}>
