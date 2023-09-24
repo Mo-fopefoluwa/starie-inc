@@ -3,21 +3,25 @@
 @tailwind utilities;
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Eudoxus Sans", sans-serif;
-  scroll-behavior: smooth;
+/* body{
+  background-image: url('./Images/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 90% -25%;
+} */
+
+.too{
+  color: #ff9201;
 }
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.cot:hover .icos{
+ background-color: rgba(214, 212, 212, 0.432);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cot:hover .texts{
+  color: white;
+}
+
+.cot:hover .textss{
+  color: white;
 }
