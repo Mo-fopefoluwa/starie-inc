@@ -11,21 +11,7 @@ const Footer = () => {
   const scrollToHome = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
-  const scrollToServices = () => {
-    window.scrollTo({ top: 1052, left: 0, behavior: "smooth" });
-  };
-  const scrollToAbout = () => {
-    window.scrollTo({ top: 2550, left: 0, behavior: "smooth" });
-  };
-  const scrollToAboutt = () => {
-    window.scrollTo({ top: 1900, left: 0, behavior: "smooth" });
-  };
-  const scrollToWhy = () => {
-    window.scrollTo({ top: 3500, left: 0, behavior: "smooth" });
-  };
-  const scrollToWhyy = () => {
-    window.scrollTo({ top: 2550, left: 0, behavior: "smooth" });
-  };
+
   return (
     <div>
       <motion.footer
@@ -33,7 +19,7 @@ const Footer = () => {
         whileInView="show"
         variants={staggerChildren}
         viewport={{ once: false, amount: 0.25 }}
-        class="bg-white dark:bg-gray-900"
+        class="bg-white "
       >
         <div class="container px-6 py-8 mx-auto">
           <div class="flex flex-col items-center text-center">
@@ -45,7 +31,7 @@ const Footer = () => {
               <motion.button
                 variants={fadeIn("left", "tween", 0.4, 1)}
                 onClick={scrollToHome}
-                class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+                class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500"
                 aria-label="Reddit"
               >
                 {" "}
@@ -95,13 +81,13 @@ const Footer = () => {
 
           <motion.hr
             variants={footerVariants}
-            class="my-6 border-slate-700 md:my-10 dark:border-slate-500"
+            class="my-6 border-slate-700 md:my-10 "
           />
 
           <div class="flex flex-col items-center sm:flex-row sm:justify-between">
             <motion.p
               variants={slideIn("up", "tween", 1.4, 1)}
-              class="text-sm text-gray-500 dark:text-gray-300"
+              class="text-sm text-gray-500 "
             >
               © Copyright Starie Inc, 2023. All Rights Reserved.
             </motion.p>

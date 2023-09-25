@@ -4,10 +4,12 @@ import { staggerChildren, zoomIn } from "../utils/motion";
 
 const Hero = () => {
   const scrollToAbout = () => {
-    window.scrollTo({ top: 2000, left: 0, behavior: "smooth" });
+    document.getElementById("aboutus").scrollIntoView({ behaviour: "smooth" });
+    // window.scrollTo({ top: 2000, left: 0, behavior: "smooth" });
   };
   const scrollToNews = () => {
-    window.scrollTo({ top: 5850, left: 0, behavior: "smooth" });
+    document.getElementById("news").scrollIntoView({ behaviour: "smooth" });
+    // window.scrollTo({ top: 5850, left: 0, behavior: "smooth" });
   };
 
   return (
@@ -42,13 +44,13 @@ const Hero = () => {
               <div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16  py-[1rem] text-left">
                 <motion.h2
                   variants={zoomIn(0.4, 1)}
-                  className="md:pt-[8rem] pt-[16rem] max-w-lg mb-6 font-sans text-[1.5rem] sm:text-[2rem] font-bold tracking-tight text-slate-700 md:text-[3rem] md:leading-none"
+                  className="md:pt-[8rem] mb-[-.4rem] md:mb-[-.6rem] pt-[16rem] max-w-lg mb-6 font-sans text-[1.8rem] sm:text-[2rem] font-bold tracking-tight text-slate-700 md:text-[3rem] md:leading-none"
                 >
                   Welcome to
                 </motion.h2>
                 <motion.span
                   variants={zoomIn(0.4, 1)}
-                  className="text-blue-800 text-[1.6rem] sm:text-[2.2rem] font-bold md:text-[3.2rem]"
+                  className="text-blue-800 text-[2rem] sm:text-[2.2rem] font-bold md:text-[3.2rem]"
                 >
                   Starie Incorporated
                 </motion.span>

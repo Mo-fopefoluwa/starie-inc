@@ -5,7 +5,7 @@ import { fadeIn, staggerChildren } from "../utils/motion";
 const Services = () => {
   return (
     <div className="bg">
-      {/* <a id="services" className="anchor"></a> */}
+      <a id="services" className="anchor"></a>
       <motion.div
         initial="hidden"
         whileInView="show"

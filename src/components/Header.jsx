@@ -14,24 +14,17 @@ const Header = () => {
   const scrollToHome = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
+
   const scrollToServices = () => {
-    window.scrollTo({ top: 850, left: 0, behavior: "smooth" });
+    document.getElementById("services").scrollIntoView({ behaviour: "smooth" });
   };
   const scrollToAbout = () => {
-    window.scrollTo({ top: 4050, left: 0, behavior: "smooth" });
+    document.getElementById("aboutus").scrollIntoView({ behaviour: "smooth" });
     // window.scrollTo({ top: 2380, left: 0, behavior: "smooth" });
   };
-  const scrollToAboutt = () => {
-    window.scrollTo({ top: 3250, left: 0, behavior: "smooth" });
-    // window.scrollTo({ top: 1600, left: 0, behavior: "smooth" });
-  };
+
   const scrollToWhy = () => {
-    window.scrollTo({ top: 2320, left: 0, behavior: "smooth" });
-    // window.scrollTo({ top: 4650, left: 0, behavior: "smooth" });
-  };
-  const scrollToWhyy = () => {
-    window.scrollTo({ top: 2150, left: 0, behavior: "smooth" });
-    // window.scrollTo({ top: 3350, left: 0, behavior: "smooth" });
+    document.getElementById("whyus").scrollIntoView({ behaviour: "smooth" });
   };
 
   const Nav = () => {
@@ -94,7 +87,7 @@ const Header = () => {
             </motion.button>
             <motion.button
               variants={fadeIn("left", "tween", 1.0, 1)}
-              onClick={scrollToWhyy}
+              onClick={scrollToWhy}
             >
               <li className="transition-all duration-500 ease-in-out flex flex-row gap-2 hover:text-slate-800 hover:text-1.5rem hover:font-bold">
                 <span>Why</span> <span>us</span>
@@ -102,7 +95,7 @@ const Header = () => {
             </motion.button>
             <motion.button
               variants={fadeIn("left", "tween", 0.8, 1)}
-              onClick={scrollToAboutt}
+              onClick={scrollToAbout}
             >
               <li className="transition-all duration-500 ease-in-out flex flex-row gap-2 hover:text-slate-800 hover:text-1.5rem hover:font-bold">
                 <span>About</span>
@@ -112,7 +105,7 @@ const Header = () => {
           </ul>
           <div className="md:hidden" ref={innerBorderRef}>
             <button
-              className=" text-[2.5rem] text-slate-800 dark:text-slate-400"
+              className=" text-[2.5rem] text-slate-800 "
               onClick={() => setOpen(!open)}
             >
               {open ? <i class="bx bx-x"></i> : <i class="bx bx-menu"></i>}

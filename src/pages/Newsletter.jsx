@@ -5,6 +5,7 @@ import { fadeIn, staggerChildren, zoomIn } from "../utils/motion";
 const Newsletter = () => {
   return (
     <div className="relative">
+      <a href="/" id="news" className="anchor"></a>
       <img
         src="bluemap.jpg"
         className="absolute inset-0 object-cover w-full h-full"
