@@ -105,7 +105,7 @@ const Header = () => {
           </ul>
           <div className="md:hidden" ref={innerBorderRef}>
             <button
-              className=" text-[2.5rem] text-slate-800 "
+              className=" text-[2.5rem] text-blue-500 hover:text-blue-300 "
               onClick={() => setOpen(!open)}
             >
               {open ? <i class="bx bx-x"></i> : <i class="bx bx-menu"></i>}
